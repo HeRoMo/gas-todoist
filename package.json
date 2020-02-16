@@ -1,0 +1,16 @@
+{
+  "name": "gas-todoist",
+  "version": "1.0.0",
+  "description": "Todoist client for Google Apps Script",
+  "main": "index.js",
+  "author": "HeRoMo",
+  "license": "MIT",
+  "scripts": {
+    "clasp:push": "./node_modules/.bin/clasp push",
+    "clasp:open": "./node_modules/.bin/clasp open"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.3.0",
+    "@types/google-apps-script": "^1.0.10"
+  }
+}
