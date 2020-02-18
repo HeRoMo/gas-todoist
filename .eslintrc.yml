@@ -1,0 +1,26 @@
+env:
+  es6: true
+  node: true
+  googleappsscript/googleappsscript: true
+extends:
+  - airbnb-base
+  - plugin:import/errors
+  - plugin:import/warnings
+  - plugin:import/typescript # this line does the trick
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+  - '@typescript-eslint'
+  - googleappsscript
+
+rules:
+  lines-between-class-members: [error, always, { exceptAfterSingleLine: true }]
+  no-console: [error, { allow: [info, warn, error] }]
+  camelcase: ["error", { allow: [URL_Fetch] }]
+  import/extensions: [error, ignorePackages, { ts: never, js: never }]
+  '@typescript-eslint/no-unused-vars': error
