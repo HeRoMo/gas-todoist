@@ -1,9 +1,9 @@
-import { Todoist } from './index'; // eslint-disable-line import/no-cycle
+import { Client } from './Client'; // eslint-disable-line import/no-cycle
 
-export default class Items {
-  private readonly todoist: Todoist;
+export default class Items_ {
+  private readonly todoist: Client;
 
-  constructor(todoist: Todoist) {
+  constructor(todoist: Client) {
     this.todoist = todoist;
   }
 

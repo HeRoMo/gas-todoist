@@ -1,4 +1,4 @@
-import { Todoist } from '../Todoist/index';
+import { Client } from '../Todoist/Client';
 
 /* eslint-disable no-underscore-dangle, @typescript-eslint/no-unused-vars */
 
@@ -7,7 +7,7 @@ function addSingleItem_() {
     content: 'Single Item',
   };
 
-  const todoist = new Todoist(TODOIST_TOKEN);
+  const todoist = new Client(TODOIST_TOKEN);
   const addedItem = todoist.items.add(task);
   Logger.log(addedItem);
 }
@@ -21,7 +21,7 @@ function addItemWithNote_() {
     content: 'Note !',
   };
 
-  const todoist = new Todoist(TODOIST_TOKEN);
+  const todoist = new Client(TODOIST_TOKEN);
   const addedItem = todoist.items.add(task, note);
   Logger.log(addedItem);
 }

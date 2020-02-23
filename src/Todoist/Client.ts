@@ -1,7 +1,6 @@
 import Items from './Items';
 
-export class Todoist {
-  private static readonly ITEM_ENDPOINT = 'https://todoist.com/API/v7/items/add';
+export class Client {
   private static readonly SYNC_ENDPOINT = 'https://api.todoist.com/sync/v8/sync';
 
   private todoistToken: string;
@@ -22,7 +21,7 @@ export class Todoist {
         token: this.todoistToken,
       },
     };
-    const response = UrlFetchApp.fetch(Todoist.SYNC_ENDPOINT, opts);
+    const response = UrlFetchApp.fetch(Client.SYNC_ENDPOINT, opts);
     console.info({ message: 'Todoist.syncCommandsのレスポンス', response });
     return JSON.parse(response.getContentText());
   }
