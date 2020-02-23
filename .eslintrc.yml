@@ -19,8 +19,12 @@ plugins:
   - googleappsscript
 
 rules:
+  '@typescript-eslint/camelcase': [error, { allow: [URL_Fetch] }]
+  '@typescript-eslint/no-unused-vars': error
+  camelcase: off
+  import/extensions: [error, ignorePackages, { ts: never, js: never }]
+  import/prefer-default-export: off
   lines-between-class-members: [error, always, { exceptAfterSingleLine: true }]
   no-console: [error, { allow: [info, warn, error] }]
-  camelcase: ["error", { allow: [URL_Fetch] }]
-  import/extensions: [error, ignorePackages, { ts: never, js: never }]
-  '@typescript-eslint/no-unused-vars': error
+  no-underscore-dangle: [error, { allowAfterThis: true }]
+  no-unused-vars: off
