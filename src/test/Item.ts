@@ -8,12 +8,12 @@ function addSingleItem_() {
   };
 
   const todoist = new Client(TODOIST_TOKEN);
-  const addedItem = todoist.items.add(task);
+  const addedItem = todoist.addItem(task);
   Logger.log(addedItem);
 }
 
 function addItemWithNote_() {
-  const task: Todoist.ItemAddArgs = {
+  const item: Todoist.ItemAddArgs = {
     content: 'Item with Note',
   };
 
@@ -22,7 +22,7 @@ function addItemWithNote_() {
   };
 
   const todoist = new Client(TODOIST_TOKEN);
-  const addedItem = todoist.items.add(task, note);
+  const addedItem = todoist.addItem(item, note);
   Logger.log(addedItem);
 }
 /* eslint-enable no-underscore-dangle, @typescript-eslint/no-unused-vars */
