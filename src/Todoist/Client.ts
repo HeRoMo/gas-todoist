@@ -1,11 +1,11 @@
-import Items from './Items';
+import { Items_ } from './Items';
 
 export class Client {
   private static readonly SYNC_ENDPOINT = 'https://api.todoist.com/sync/v8/sync';
 
   private todoistToken: string;
 
-  private _items: Items;
+  private _items: Items_;
 
   public constructor(token: string) {
     this.todoistToken = token;
@@ -26,8 +26,8 @@ export class Client {
     return JSON.parse(response.getContentText());
   }
 
-  get items(): Items {
-    this._items = this._items || new Items(this);
+  get items(): Items_ {
+    this._items = this._items || new Items_(this);
     return this._items;
   }
 }

@@ -1,6 +1,6 @@
 import { Client } from './Client'; // eslint-disable-line import/no-cycle
 
-export default class Items_ {
+export class Items_ {
   private readonly todoist: Client;
 
   constructor(todoist: Client) {
