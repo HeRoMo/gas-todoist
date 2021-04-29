@@ -1,0 +1,28 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@types/google-apps-script"
+    versions:
+    - 1.0.22
+    - 1.0.23
+    - 1.0.24
+    - 1.0.25
+    - 1.0.26
+    - 1.0.27
+    - 1.0.28
+    - 1.0.30
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: "@typescript-eslint/eslint-plugin"
+    versions:
+    - 2.34.0
+  - dependency-name: eslint-config-airbnb-base
+    versions:
+    - 14.1.0
