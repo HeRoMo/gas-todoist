@@ -557,10 +557,10 @@ eslint-module-utils@^2.4.1:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-googleappsscript@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-googleappsscript/-/eslint-plugin-googleappsscript-1.0.3.tgz#838ce536b969443ec39c1944350c722334884135"
-  integrity sha512-Dgcbu8w2HzAze0T4AyIVUfS6g213q1sMZ+BDkfUlulL79HMiLLocD1gt8XnKJ0fgutUkhAsIVuuHxNs3tmrlWA==
+eslint-plugin-googleappsscript@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-googleappsscript/-/eslint-plugin-googleappsscript-1.0.4.tgz#ba995b237cdec18bd72402a8c9023675d2a70510"
+  integrity sha512-Z6w1EMw0z0VOUvI0PFquigNSkYTgB+pVb2O2KYedDHnllwrgjjNBOLxsqPmtwmjOtFqCu7TuL0hJQwxVnp5OzQ==
   dependencies:
     requireindex "~1.1.0"
 
