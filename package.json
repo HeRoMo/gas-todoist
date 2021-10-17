@@ -11,8 +11,8 @@
     "clasp:open": "./node_modules/.bin/clasp open"
   },
   "devDependencies": {
-    "@google/clasp": "^2.3.0",
-    "@types/google-apps-script": "^1.0.10",
+    "@google/clasp": "^2.4.1",
+    "@types/google-apps-script": "^1.0.37",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^8.0.1",
