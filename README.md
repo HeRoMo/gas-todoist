@@ -9,12 +9,13 @@ NOW, only `add_item` command is implemented.
 ## Instalation
 
 1. Create or Open your GAS project.
-2. Select menu [Resource] - [Library], then Library daialog is opened.
-3. Input `1EMZVgA58kI-yF2-mB8r14-dTk0D4cia9tRc9X2_lpiWO3IqRq6eWBg-S`, and click *Add* button. 
+2. Cliock Add Library link, then Library daialog is opened.
    ![Input library-id](doc/images/library-dialog1.png)
-4. Change *Identifier* of this library to `Todoist`
+3. Input `1EMZVgA58kI-yF2-mB8r14-dTk0D4cia9tRc9X2_lpiWO3IqRq6eWBg-S`, and click *Add* button.
+4. Select library version.
+5. Change *Identifier* of this library to `Todoist`
    ![change Identifier](doc/images/library-dialog2.png)
-5. Click *Save* button.
+6. Click *Save* button.
 
 ## Usage
 
