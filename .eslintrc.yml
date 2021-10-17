@@ -8,8 +8,8 @@ extends:
   - plugin:import/warnings
   - plugin:import/typescript # this line does the trick
 globals:
-  Atomics: readonly
-  SharedArrayBuffer: readonly
+  GoogleAppsScript: readonly
+  Todoist: readonly
   TODOIST_TOKEN: readonly
 parser: '@typescript-eslint/parser'
 parserOptions:
@@ -18,13 +18,25 @@ parserOptions:
 plugins:
   - '@typescript-eslint'
   - googleappsscript
+ignorePatterns:
+  - '*.js'
+  - '*.d.ts'
 rules:
-  '@typescript-eslint/camelcase': [error, { allow: [URL_Fetch] }]
+  '@typescript-eslint/naming-convention': [
+    error,
+    { selector: default, format: [camelCase] },
+    { selector: variable, format: [camelCase, UPPER_CASE] },
+    { selector: parameter, format: [camelCase], leadingUnderscore: allow },
+    { selector: memberLike, modifiers: [private], format: [camelCase] },
+    { selector: typeLike, format: [PascalCase] },
+    { selector: function, modifiers: [global], format:  [camelCase], trailingUnderscore: allow },
+    { selector: classProperty, modifiers: [static, readonly], format:  [UPPER_CASE] }
+  ]
   '@typescript-eslint/no-unused-vars': error
-  camelcase: off
+  camelcase: 'off'
   import/extensions: [error, ignorePackages, { ts: never, js: never }]
   import/prefer-default-export: off
   lines-between-class-members: [error, always, { exceptAfterSingleLine: true }]
   no-console: [error, { allow: [info, warn, error] }]
   no-underscore-dangle: [error, { allowAfterThis: true }]
-  no-unused-vars: off
+  no-unused-vars: 'off'
