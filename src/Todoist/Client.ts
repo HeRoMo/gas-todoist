@@ -11,16 +11,16 @@ export class Client {
     const itemTempId = Utilities.getUuid();
     const commands = [{
       args: item,
-      temp_id: itemTempId, // eslint-disable-line @typescript-eslint/camelcase
+      temp_id: itemTempId, // eslint-disable-line @typescript-eslint/naming-convention
       type: 'item_add',
       uuid: Utilities.getUuid(),
     }];
     if (note) {
-      // eslint-disable-next-line @typescript-eslint/camelcase
+      // eslint-disable-next-line @typescript-eslint/naming-convention
       const addingNote = { ...note, item_id: itemTempId };
       const noteCommand = {
         args: addingNote,
-        temp_id: Utilities.getUuid(), // eslint-disable-line @typescript-eslint/camelcase
+        temp_id: Utilities.getUuid(), // eslint-disable-line @typescript-eslint/naming-convention
         type: 'note_add',
         uuid: Utilities.getUuid(),
       };
