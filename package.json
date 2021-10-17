@@ -1,6 +1,6 @@
 {
   "name": "gas-todoist",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Todoist client for Google Apps Script",
   "main": "index.js",
   "author": "HeRoMo",
