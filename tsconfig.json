@@ -1,12 +1,5 @@
 {
   "compilerOptions": {
-    "isolatedModules": true,
-    "noLib": true,
-    "noResolve": true,
-    "target": "ES3",
-    "module": "None",
-    "noImplicitUseStrict": true,
-    "experimentalDecorators": true,
     "typeRoots" : [
       "./node_modules/@types",
       "./types"
