@@ -5,6 +5,9 @@ on:
 jobs:
   eslint_npm:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      statuses: write
     steps:
       - uses: actions/checkout@v2
         with:
