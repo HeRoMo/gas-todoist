@@ -18,6 +18,6 @@
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-googleappsscript": "^1.0.4",
-    "eslint-plugin-import": "^2.25.2"
+    "eslint-plugin-import": "^2.25.3"
   }
 }
