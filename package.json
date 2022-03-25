@@ -13,7 +13,7 @@
   "devDependencies": {
     "@google/clasp": "^2.4.1",
     "@types/google-apps-script": "^1.0.45",
-    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.16.0",
     "eslint": "^8.11.0",
     "eslint-config-airbnb-base": "^15.0.0",
