@@ -20,6 +20,6 @@ jobs:
       - name: yarn install
         run: yarn install
       - name: pronto run
-        uses: HeRoMo/pronto-action@v1.40.0
+        uses: HeRoMo/pronto-action@v1.41.0
         with:
           runner: eslint_npm
