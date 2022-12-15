@@ -19,7 +19,7 @@ NOW, only `add_item` command is implemented.
 
 ## Usage
 
-Get API Token `TODOIST_TOKEN` in https://todoist.com/prefs/integrations .
+Get API Token `TODOIST_TOKEN` in https://todoist.com/app/settings/integrations/developer .
 
 Some samples is below.
 
@@ -65,7 +65,7 @@ function addItemWithNote() {
 
 ## Related Documents
 
-- [API Documentation \| Todoist Developer](https://developer.todoist.com/sync/v8/#items)
+- [API Documentation \| Todoist Developer](https://developer.todoist.com/sync)
 
 ## LICENSE
 
