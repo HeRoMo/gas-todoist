@@ -1,5 +1,5 @@
 export class Client {
-  private static readonly SYNC_ENDPOINT = 'https://api.todoist.com/sync/v8/sync';
+  private static readonly SYNC_ENDPOINT = 'https://api.todoist.com/sync/v9/sync';
 
   private todoistToken: string;
 
