@@ -33,7 +33,7 @@ export class Client {
     const opts: GoogleAppsScript.URL_Fetch.URLFetchRequestOptions = {
       method: 'post',
       contentType: 'application/x-www-form-urlencoded',
-      headers:{Authorization:"Bearer "+this.todoistToken},
+      headers: { Authorization: `Bearer ${this.todoistToken}` }, // eslint-disable-line @typescript-eslint/naming-convention
       muteHttpExceptions: true,
       payload: {
         commands: JSON.stringify(commands)
