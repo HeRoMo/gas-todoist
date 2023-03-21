@@ -36,7 +36,7 @@ export class Client {
       headers: { Authorization: `Bearer ${this.todoistToken}` }, // eslint-disable-line @typescript-eslint/naming-convention
       muteHttpExceptions: true,
       payload: {
-        commands: JSON.stringify(commands)
+        commands: JSON.stringify(commands),
       },
     };
     const response = UrlFetchApp.fetch(Client.SYNC_ENDPOINT, opts);
