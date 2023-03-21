@@ -1,75 +1,72 @@
 declare namespace Todoist {
-  interface Item {
+  type Item = {
     id: number;
-    legacy_id: number;
     user_id: number;
     project_id: number;
-    legacy_project_id: number;
     content: string;
+    description: string;
+    due?: object;
     priority: 1|2|3|4;
-    due: object|null;
-    parent_id: number|null;
-    legacy_parent_id: number|null;
+    parent_id?: number;
     child_order: number;
-    section_id: null;
+    section_id?: string;
     day_order: number;
-    collapsed: 0|1;
-    children: null;
-    labels: [number];
-    added_by_uid: number|null;
-    assigned_by_uid: number|null;
-    responsible_uid: number|null;
-    checked: 0|1;
-    in_history: 0|1;
-    is_deleted: 0|1;
-    sync_id: number|null;
-    date_completed: number|null;
-    date_added: string;
+    collapsed: boolean;
+    labels: [string];
+    added_by_uid?: number;
+    assigned_by_uid?: string;
+    responsible_uid?: string;
+    checked: boolean;
+    is_deleted: boolean;
+    sync_id?: string;
+    completed_at?: number;
+    added_at: string;
   }
 
   interface ItemAddArgs {
     content: string;
-    project_id?: number|string;
+    description?: string;
+    project_id?: string;
     due?: object;
     priority?: 1|2|3|4;
     parent_id?: number|null;
     child_order?: number;
     section_id?: number|null;
     day_order?: number;
-    collapsed?: 0|1;
-    labels?: [number];
-    assigned_by_uid?: number;
-    responsible_uid?: number|null|'';
+    collapsed?: boolean;
+    labels?: [string];
+    assigned_by_uid?: string;
+    responsible_uid?: string;
     auto_reminder?: boolean;
     auto_parse_labels?: boolean;
   }
 
   interface ItemUpdateArgs {
-    id: number|string;
-    content: string;
+    id: string;
+    content?: string;
+    description?: string;
     due?: object;
     priority?: 1|2|3|4;
-    collapsed?: 0|1;
-    labels?: [number];
-    assigned_by_uid?: number;
-    responsible_uid?: number|null|'';
+    collapsed?: boolean;
+    labels?: [string];
+    assigned_by_uid?: string;
+    responsible_uid?: string;
     day_order?: number;
   }
 
   interface ItemMoveArgs {
-    id: number|string;
-    parent_id?: number|string;
-    section_id?: number|string;
-    project_id?: number|string;
+    id: string;
+    parent_id?: string;
+    section_id?: string;
+    project_id?: string;
   }
 
   interface ItemDeleteArgs {
-    id: number|string;
+    id: string;
   }
 
   interface ItemCompleteArgs {
-    id: number|string;
-    date_completed: Date;
-    force_history: boolean;
+    id: string;
+    date_completed?: Date;
   }
 }
