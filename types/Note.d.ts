@@ -1,24 +1,20 @@
 declare namespace Todoist {
   interface Note {
-    id: number;
-    legacy_id: number;
-    posted_uid: number;
-    project_id: number;
-    legacy_project_id: number;
-    item_id: number;
-    legacy_item_id: number;
+    id: string;
+    posted_uid: string;
+    item_id: string;
     content: string;
     file_attachment: FileAttachment;
-    uids_to_notify: number[];
-    is_deleted: 0|1;
-    posted: string;
+    uids_to_notify: [string];
+    is_deleted: boolean;
+    posted_at: string;
     reactions: Reaction;
   }
 
   interface FileAttachment {
-    file_type: string|'text/plain';
     file_name: string;
     file_size: number;
+    file_type: string|'text/plain'|'image/png';
     file_url: string;
     upload_state: 'pending'|'completed';
   }
@@ -28,10 +24,10 @@ declare namespace Todoist {
   }
 
   interface NoteAddArgs {
-    item_id?: number|string; // When adding note with item, filled by temp=id of item.
-    content: string
+    item_id: string; // When adding note with item, filled by temp=id of item.
+    content: string;
     file_attachment?: FileUploadArgs;
-    uids_to_notify?: number[];
+    uids_to_notify?: [string];
   }
 
   interface FileUploadArgs {
