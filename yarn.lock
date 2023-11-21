@@ -175,10 +175,10 @@
     "@types/node" "*"
     "@types/responselike" "*"
 
-"@types/google-apps-script@1.0.77":
-  version "1.0.77"
-  resolved "https://registry.yarnpkg.com/@types/google-apps-script/-/google-apps-script-1.0.77.tgz#476a0d0d1989e261ffc9218b2b09b4e19848c81d"
-  integrity sha512-P/3FDqyYG4Y850TmEs5420xuZXEeAsreBBOJU2bUnbdvvqBuPjyFtIu+kArqAfmf8hvCy/F95/pPQc2X2hwAbQ==
+"@types/google-apps-script@1.0.78":
+  version "1.0.78"
+  resolved "https://registry.yarnpkg.com/@types/google-apps-script/-/google-apps-script-1.0.78.tgz#4ba09b538d19582ac031d5cd1294794c7a6aba07"
+  integrity sha512-JOTy4vjBQ+HfdtJMkfcNF5WM8RC3R6SVp90bd8BCFvNWSaQ7zzP3abOLuJSCwQHjt0hWftofckvhwEcZjZ4hcQ==
 
 "@types/http-cache-semantics@*":
   version "4.0.1"
