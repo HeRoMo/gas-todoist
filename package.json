@@ -15,7 +15,7 @@
     "@types/google-apps-script": "1.0.83",
     "@typescript-eslint/eslint-plugin": "7.7.1",
     "@typescript-eslint/parser": "7.7.1",
-    "eslint": "9.1.0",
+    "eslint": "9.1.1",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-googleappsscript": "1.0.5",
     "eslint-plugin-import": "2.29.1"
