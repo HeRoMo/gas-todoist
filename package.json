@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@google/clasp": "2.5.0",
-    "@types/google-apps-script": "1.0.100",
+    "@types/google-apps-script": "2.0.7",
     "@typescript-eslint/eslint-plugin": "8.46.2",
     "@typescript-eslint/parser": "8.46.2",
     "eslint": "9.38.0",
