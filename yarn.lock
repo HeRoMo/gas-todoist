@@ -153,10 +153,10 @@
     intl-messageformat "10.7.18"
     tslib "^2.8.0"
 
-"@google/clasp@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@google/clasp/-/clasp-3.2.0.tgz#b707912df252b74faf6401315939ddb7bb8f1902"
-  integrity sha512-2RDjrVip6qY29WucVobrEmb1evRllmZ1l4xMltxcQ98KkKtA3fZM24jh30DgdXrLyCe4oqPGuBh69jJwFbrwTg==
+"@google/clasp@3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@google/clasp/-/clasp-3.3.0.tgz#d83ec2f07f731063612e94d07c953b67e305aebd"
+  integrity sha512-0OTjAHes2tJ2z0THECx6xYLB4DaChnQLwwAm3PnzAJUTLwDrW81biaP04K9UKMXea5DqvbuDmveNEZlQhi1Vzg==
   dependencies:
     "@formatjs/intl" "^3.1.6"
     "@modelcontextprotocol/sdk" "^1.12.1"
