@@ -1,10 +1,11 @@
-import { Client } from '../Todoist/Client';
-
 /* eslint-disable no-underscore-dangle, @typescript-eslint/no-unused-vars */
 
+const TODOIST_TOKEN = ''
 function addSingleItem_() {
   const task: Todoist.ItemAddArgs = {
     content: 'Single Item',
+    description: 'Single Item Description',
+    labels: ['shopping 🎁'],
   };
 
   const todoist = new Client(TODOIST_TOKEN);
@@ -18,7 +19,8 @@ function addItemWithNote_() {
   };
 
   const note: Todoist.NoteAddArgs = {
-    content: 'Note !',
+    item_id: '',
+    content: 'Note !'
   };
 
   const todoist = new Client(TODOIST_TOKEN);
