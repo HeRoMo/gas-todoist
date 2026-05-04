@@ -6,16 +6,20 @@
   "author": "HeRoMo",
   "license": "MIT",
   "scripts": {
-    "eslint": "eslint . --ext .ts",
-    "clasp:push": "./node_modules/.bin/clasp push",
+    "eslint": "eslint .",
+    "build": "tsc && cp src/appsscript.json dist/",
+    "clasp:push": "yarn build && ./node_modules/.bin/clasp push",
     "clasp:open": "./node_modules/.bin/clasp open"
   },
   "devDependencies": {
     "@google/clasp": "3.3.0",
+    "typescript": "^5.0.0",
     "@types/google-apps-script": "2.0.8",
     "@typescript-eslint/eslint-plugin": "8.59.1",
     "@typescript-eslint/parser": "8.59.1",
+    "@eslint/eslintrc": "^3.3.1",
     "eslint": "10.3.0",
+    "globals": "^16.1.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-googleappsscript": "1.0.5",
     "eslint-plugin-import": "2.32.0"
