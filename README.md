@@ -30,7 +30,7 @@ function addSingleItem() {
     content: 'Single Item',
   };
 
-  const todoist = new Todoist.Client(TODOIST_TOKEN);
+  const todoist = Todoist.createClient(TODOIST_TOKEN);
   const addedItem = todoist.addItem(task);
 }
 
@@ -43,7 +43,7 @@ function addItemWithNote() {
     content: 'Note !',
   };
 
-  const todoist = new Todoist.Client(TODOIST_TOKEN);
+  const todoist = Todoist.createClient(TODOIST_TOKEN);
   const addedItem = todoist.addItem(item, note);
 }
 ```
