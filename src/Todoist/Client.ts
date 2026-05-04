@@ -1,4 +1,4 @@
-class Client {
+class Client { // eslint-disable-line @typescript-eslint/no-unused-vars
   private static readonly SYNC_ENDPOINT = 'https://api.todoist.com/api/v1/sync';
 
   private todoistToken: string;

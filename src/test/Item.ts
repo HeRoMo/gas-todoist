@@ -1,6 +1,6 @@
 /* eslint-disable no-underscore-dangle, @typescript-eslint/no-unused-vars */
 
-const TODOIST_TOKEN = ''
+const TODOIST_TOKEN = '';
 function addSingleItem_() {
   const task: Todoist.ItemAddArgs = {
     content: 'Single Item',
@@ -8,7 +8,7 @@ function addSingleItem_() {
     labels: ['shopping 🎁'],
   };
 
-  const todoist = new Client(TODOIST_TOKEN);
+  const todoist = new Client(TODOIST_TOKEN); // eslint-disable-line no-undef
   const addedItem = todoist.addItem(task);
   Logger.log(addedItem);
 }
@@ -19,11 +19,11 @@ function addItemWithNote_() {
   };
 
   const note: Todoist.NoteAddArgs = {
-    item_id: '',
-    content: 'Note !'
+    item_id: '', // eslint-disable-line @typescript-eslint/naming-convention
+    content: 'Note !',
   };
 
-  const todoist = new Client(TODOIST_TOKEN);
+  const todoist = new Client(TODOIST_TOKEN); // eslint-disable-line no-undef
   const addedItem = todoist.addItem(item, note);
   Logger.log(addedItem);
 }
