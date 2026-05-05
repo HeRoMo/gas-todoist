@@ -2,6 +2,8 @@
   "compilerOptions": {
     "target": "ES2019",
     "module": "none",
+    "ignoreDeprecations": "6.0",
+    "rootDir": "./src",
     "outDir": "./dist",
     "typeRoots": [
       "./node_modules/@types"
