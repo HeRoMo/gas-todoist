@@ -1,4 +1,4 @@
-class Client { // eslint-disable-line @typescript-eslint/no-unused-vars
+class Client {
   private static readonly SYNC_ENDPOINT = 'https://api.todoist.com/api/v1/sync';
 
   private todoistToken: string;
@@ -40,7 +40,12 @@ class Client { // eslint-disable-line @typescript-eslint/no-unused-vars
       },
     };
     const response = UrlFetchApp.fetch(Client.SYNC_ENDPOINT, opts);
-    console.info({ message: 'Todoist.syncCommandsのレスポンス', response });
+    console.info({ message: 'Todoist.syncCommandsのレスポンス', response: response.getContentText() });
     return JSON.parse(response.getContentText());
   }
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function createClient(token: string): Client {
+  return new Client(token);
 }

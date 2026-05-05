@@ -8,7 +8,7 @@ function addSingleItem_() {
     labels: ['shopping 🎁'],
   };
 
-  const todoist = new Client(TODOIST_TOKEN); // eslint-disable-line no-undef
+  const todoist = createClient(TODOIST_TOKEN); // eslint-disable-line no-undef
   const addedItem = todoist.addItem(task);
   Logger.log(addedItem);
 }
@@ -23,7 +23,7 @@ function addItemWithNote_() {
     content: 'Note !',
   };
 
-  const todoist = new Client(TODOIST_TOKEN); // eslint-disable-line no-undef
+  const todoist = createClient(TODOIST_TOKEN); // eslint-disable-line no-undef
   const addedItem = todoist.addItem(item, note);
   Logger.log(addedItem);
 }
