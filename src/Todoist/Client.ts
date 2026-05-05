@@ -40,7 +40,7 @@ class Client {
       },
     };
     const response = UrlFetchApp.fetch(Client.SYNC_ENDPOINT, opts);
-    console.info({ message: 'Todoist.syncCommandsのレスポンス', response });
+    console.info({ message: 'Todoist.syncCommandsのレスポンス', response: response.getContentText() });
     return JSON.parse(response.getContentText());
   }
 }
