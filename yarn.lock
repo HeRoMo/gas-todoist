@@ -117,10 +117,10 @@
     "@formatjs/icu-messageformat-parser" "3.5.17"
     intl-messageformat "11.2.14"
 
-"@google/clasp@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@google/clasp/-/clasp-3.4.0.tgz#131ada2232de9396901757d5ba9ad40f18232e49"
-  integrity sha512-R1F+LL+nuVuGayj/Qob5E9Eiu1UI1w0DQiB+Rl302wpdungJ5NXOIBoD1DkyI324C4nWs3KhHGJXRCpuOpuS1g==
+"@google/clasp@3.4.1":
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@google/clasp/-/clasp-3.4.1.tgz#5a256543ad9a79bf426dfef249ff510973cf91d0"
+  integrity sha512-92wlpu0loC9t4oADuTyJOxQm6T4H2dOD9oQ+BvdFJuzM2uP7cK5dGrrJQhb/m/HLbaR0UOsBXBqRlYbfyR9jbA==
   dependencies:
     "@formatjs/intl" "^4.1.7"
     "@modelcontextprotocol/sdk" "^1.30.0"
